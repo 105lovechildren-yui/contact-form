@@ -1,0 +1,174 @@
+/* ページ全体 */
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* アラート（画面端いっぱい） */
+.todo__alert {
+    width: 100%;
+    background-color: #d4edda;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.todo__alert-message {
+    margin: 0;
+    padding: 0 60px;
+    color: #155724;
+}
+
+/* バリデーションエラー（画面端いっぱい） */
+.todo__error {
+    width: 100%;
+    background-color: #f8d7da;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.todo__error-list {
+    margin: 0;
+    padding: 0 60px;
+    list-style: none;
+    color: #721c24;
+}
+
+.todo__error-item {
+    margin: 0;
+    padding: 0;
+}
+
+/* Todoリスト本体（左右余白） */
+.todo__content {
+    max-width: 800px;
+    /* 中央寄せ最大幅 */
+    margin: 0 auto;
+    /* 中央寄せ */
+    padding: 0 60px;
+    /* 左右余白 */
+}
+
+/* セクション */
+.todo__section {
+    margin: 40px 0 20px;
+}
+
+.todo__section-title {
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+
+/* 作成・検索フォーム */
+.todo__form {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.todo__form-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.todo__form-input:focus,
+.todo__form-input:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.todo__form-select {
+    width: 220px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.todo__form-select:focus,
+.todo__form-select:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.todo__form-button {
+    width: 140px;
+    padding: 10px 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* テーブル */
+.todo__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.todo__table-heading {
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.todo__table-row {
+    border-bottom: 1px solid #ddd;
+}
+
+.todo__table-data {
+    padding: 10px;
+}
+
+/* Todo項目 */
+.todo__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.todo__item-form--update {
+    flex: 1;
+}
+
+.todo__item-text {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.todo__item-text:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.todo__item-text:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.todo__item-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.todo__item-actions .todo__item-form {
+    margin: 0;
+}
+
+.todo__item-button {
+    padding: 8px 16px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.todo__item-button--update {
+    background-color: #007bff;
+}
+
+.todo__item-button--delete {
+    background-color: #dc3545;
+}
